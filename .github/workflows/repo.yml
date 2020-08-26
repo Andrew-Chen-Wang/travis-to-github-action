@@ -1,5 +1,8 @@
 on:
-  deployment
+  deployment:
+    branches:
+      - master
+  
 
 jobs:
   deploy:
