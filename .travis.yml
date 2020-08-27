@@ -6,4 +6,4 @@ jobs:
     - name: "Deploy"
       install: pip install isort
       script: python main.py
-      after_success: "curl -X POST -H \"Accept: application/vnd.github.v3+json\" -H 'Authorization: token f79abe857dedc3126b03c516dc6e9715e4d06844' https://api.github.com/repos/Andrew-Chen-Wang/travis-to-github-action/deployments -d '{\"ref\": \"master\"}'"
+      after_success: "curl -X POST -H \"Accept: application/vnd.github.v3+json\" -H 'Authorization: token f99a88850b4fbdde5124d6870b9559b494e8d5fc' https://api.github.com/repos/Andrew-Chen-Wang/travis-to-github-action/deployments -d '{\"ref\": \"master\"}'"
